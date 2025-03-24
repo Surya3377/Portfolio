@@ -1,5 +1,4 @@
 import React from "react";
-import { ExternalLink } from "lucide-react";
 import lms from "../assets/images/lms.png";
 import doors from "../assets/images/doorsAdvaisor.png";
 

@@ -130,6 +130,7 @@ const Header = ({
               <a
                 href="https://www.linkedin.com/in/suryaprakashpolu"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-all hover:-translate-y-1"
               >
                 <Linkedin size={18} />
@@ -137,6 +138,7 @@ const Header = ({
               <a
                 href="https://github.com/Surya3377"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-all hover:-translate-y-1"
               >
                 <svg

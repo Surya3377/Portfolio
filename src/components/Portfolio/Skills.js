@@ -1,5 +1,5 @@
 import React from "react";
-import { Cpu, Database, Server, Globe } from "lucide-react";
+import { Cpu, Globe } from "lucide-react";
 
 const Skills = ({ registerSection }) => {
   // Skills data

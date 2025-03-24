@@ -1,19 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Header from "./Header";
-import About from "./About";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Project from "./Project";
 import Contact from "./Contact";
 
 const Portfolio = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
   const [typedText, setTypedText] = useState("Full Stack Developer");
-  const typingPhrases = ["React Developer", "Front-End Developer"];
-
+  const typingPhrases = useMemo(
+    () => ["Web Developer", "React Enthusiast", "MERN Stack Developer"],
+    []
+  );
   // References
   const sectionsRef = useRef({});
 
@@ -57,20 +57,13 @@ const Portfolio = () => {
       clearInterval(typingInterval);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [typingPhrases]);
 
   // Register section ref
   const registerSection = (id, ref) => {
     if (ref && !sectionsRef.current[id]) {
       sectionsRef.current[id] = ref;
     }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   // Animation classes based on scroll position
@@ -91,6 +84,7 @@ const Portfolio = () => {
     <div>
       <Header
         isScrolled={isScrolled}
+        activeSection={activeSection}
         registerSection={registerSection}
         typedText={typedText}
         getAnimationClass={getAnimationClass}

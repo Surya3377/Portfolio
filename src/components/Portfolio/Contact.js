@@ -68,6 +68,7 @@ const Contact = ({ registerSection }) => {
                 <a
                   href="https://www.linkedin.com/in/suryaprakashpolu"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-600 transition-colors text-sm"
                 >
                   linkedin.com/in/suryaprakashpolu
