@@ -22,7 +22,7 @@ const Skills = ({ registerSection }) => {
   return (
     <section
       id="skills"
-      className="py-20 bg-gray-800"
+      className="py-20 bg-gray-900"
       ref={(ref) => registerSection("skills", ref)}
     >
       <div className="container mx-auto px-6">
@@ -37,7 +37,7 @@ const Skills = ({ registerSection }) => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {/* Frontend Skills */}
-          <div className="bg-gray-900/50 rounded-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl">
+          <div className="bg-gray-800/50 rounded-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl">
             <div className="mb-4 text-blue-600">
               <Globe size={36} />
             </div>
@@ -57,7 +57,7 @@ const Skills = ({ registerSection }) => {
           </div>
 
           {/* Tools Skills */}
-          <div className="bg-gray-900/50 rounded-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl">
+          <div className="bg-gray-800/50 rounded-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl">
             <div className="mb-4 text-blue-600">
               <Cpu size={36} />
             </div>

@@ -6,12 +6,12 @@ const Contact = ({ registerSection }) => {
     <>
       <section
         id="contact"
-        className="py-3"
+        className="py-3 bg-gray-800"
         ref={(ref) => registerSection("contact", ref)}
       >
         <section className="container mx-auto px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold inline-block relative">
+            <h2 className="text-3xl text-gray-100 font-bold inline-block relative">
               Get In Touch
               <span className="absolute left-0 right-0 mx-auto bottom-0 w-20 h-1 bg-blue-600"></span>
             </h2>
@@ -25,8 +25,10 @@ const Contact = ({ registerSection }) => {
                 <div className="bg-gray-800 rounded-full p-3 text-blue-600 mb-3">
                   <MapPin size={24} />
                 </div>
-                <h4 className="text-lg font-medium mb-1">Location</h4>
-                <p className="text-gray-400 text-sm">
+                <h4 className="text-lg font-medium mb-1 text-gray-100">
+                  Location
+                </h4>
+                <p className="text-gray-100 text-sm">
                   Available for remote work globally
                 </p>
               </div>
@@ -36,10 +38,12 @@ const Contact = ({ registerSection }) => {
                 <div className="bg-gray-800 rounded-full p-3 text-blue-600 mb-3">
                   <Mail size={24} />
                 </div>
-                <h4 className="text-lg font-medium mb-1">Email</h4>
+                <h4 className="text-lg text-gray-100 font-medium mb-1">
+                  Email
+                </h4>
                 <a
                   href="mailto:suryapolu35@gmail.com"
-                  className="text-gray-400 hover:text-blue-600 transition-colors text-sm"
+                  className="text-gray-100 hover:text-blue-600 transition-colors text-sm underline"
                 >
                   suryapolu35@gmail.com
                 </a>
@@ -50,10 +54,12 @@ const Contact = ({ registerSection }) => {
                 <div className="bg-gray-800 rounded-full p-3 text-blue-600 mb-3">
                   <Phone size={24} />
                 </div>
-                <h4 className="text-lg font-medium mb-1">Phone</h4>
+                <h4 className="text-lg font-medium mb-1 text-gray-100">
+                  Phone
+                </h4>
                 <a
                   href="tel:+17816017181"
-                  className="text-gray-400 hover:text-blue-600 transition-colors text-sm"
+                  className="text-gray-100 hover:text-blue-600 transition-colors text-sm"
                 >
                   +91 7816017181
                 </a>
@@ -64,12 +70,14 @@ const Contact = ({ registerSection }) => {
                 <div className="bg-gray-800 rounded-full p-3 text-blue-600 mb-3">
                   <Linkedin size={24} />
                 </div>
-                <h4 className="text-lg font-medium mb-1">LinkedIn</h4>
+                <h4 className="text-lg font-medium mb-1 text-gray-100">
+                  LinkedIn
+                </h4>
                 <a
                   href="https://www.linkedin.com/in/suryaprakashpolu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-600 transition-colors text-sm"
+                  className="text-gray-100 hover:text-blue-600 transition-colors text-sm underline"
                 >
                   linkedin.com/in/suryaprakashpolu
                 </a>

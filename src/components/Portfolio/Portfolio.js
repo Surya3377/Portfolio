@@ -6,12 +6,13 @@ import Project from "./Project";
 import Contact from "./Contact";
 
 const Portfolio = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
   const [typedText, setTypedText] = useState("Full Stack Developer");
   const typingPhrases = useMemo(
-    () => ["Web Developer", "React Enthusiast", "MERN Stack Developer"],
+    () => ["Web Developer", "React Developer", "Front-End Developer"],
     []
   );
   // References
@@ -83,6 +84,8 @@ const Portfolio = () => {
   return (
     <div>
       <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
         isScrolled={isScrolled}
         activeSection={activeSection}
         registerSection={registerSection}

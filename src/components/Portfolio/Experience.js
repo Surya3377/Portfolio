@@ -4,16 +4,16 @@ const Experience = ({ registerSection }) => {
   return (
     <section
       id="experience"
-      className="py-5"
+      className="py-5 bg-gray-800"
       ref={(ref) => registerSection("experience", ref)}
     >
       <div className="container mx-auto px-6">
         <div className="mb-2">
-          <h2 className="text-3xl font-bold mb-2 inline-block relative">
+          <h2 className="text-3xl font-bold mb-2 inline-block text-gray-100 relative">
             Work Experience
             <span className="absolute left-0 bottom-0 w-20 h-1 bg-blue-600 mt-2"></span>
           </h2>
-          <p className="text-gray-400 mt-1">My professional journey</p>
+          <p className="text-gray-300 mt-1">My professional journey</p>
         </div>
 
         <div className="relative">
@@ -28,8 +28,8 @@ const Experience = ({ registerSection }) => {
                 <div className="absolute top-0 left-10 md:left-auto md:right1/2 md:mr-10 bg-blue-600 text-white px-3 py-1 rounded text-sm">
                   Mar 2023 - Present
                 </div>
-                <div className="mt-8 md:mt-0 bg-gray-800/50 rounded-lg p-6 hover:shadow-lg transition-all">
-                  <h3 className="text-xl font-semibold mb-1">
+                <div className="mt-8 md:mt-0 bg-gray-900/50 rounded-lg p-6 hover:shadow-lg transition-all">
+                  <h3 className="text-xl font-semibold text-gray-100 mb-1">
                     React Developer
                   </h3>
                   <p className="text-blue-600 mb-4">Siepl Innovations</p>
@@ -90,13 +90,13 @@ const Experience = ({ registerSection }) => {
 
             {/* Education Section */}
             <div className="relative">
-              <div className="md:ml-auto md:w-1/2 md:pl-12 pl-10">
-                <div className="absolute top-0 left-0 md:left-1/2 w-4 h-4 rounded-full bg-gray-700 transform -translate-x-1/2"></div>
+              <div className="md:ml-auto md:w-1/2 md:pl-12 pl-1">
+                <div className="absolute top-0 left-0 md:left-1/2 w-4 h-4 rounded-full bg-gray-900 transform -translate-x-1/2"></div>
                 <div className="absolute top-0  md:right1/2 bg-gray-700 text-white px-3 py-1 rounded text-sm">
                   Education
                 </div>
-                <div className="mt-8 md:mt-0 bg-gray-800/50 rounded-lg p-6 hover:shadow-lg transition-all">
-                  <h3 className="text-xl font-semibold mb-1">
+                <div className="mt-8 md:mt-0 bg-gray-900/50 rounded-lg p-6 hover:shadow-lg transition-all">
+                  <h3 className="text-xl text-gray-100 font-semibold mb-1">
                     B. Tech (Electrical And Electronics Engineering)
                   </h3>
                   <p className="text-blue-600 mb-4">JNTUK University</p>

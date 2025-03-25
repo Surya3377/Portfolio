@@ -1,5 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Webkit Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 3px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* Dark gray background */
+  border-radius: 10px; /* Rounded track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f5bd5; /* Blue scrollbar */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Darker blue on hover */
 }

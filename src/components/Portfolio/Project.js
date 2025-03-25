@@ -49,7 +49,7 @@ const Project = ({ registerSection }) => {
   return (
     <section
       id="projects"
-      className="py-20 bg-gray-800"
+      className="py-20 bg-gray-900"
       ref={(ref) => registerSection("projects", ref)}
     >
       <div className="container mx-auto px-6">
