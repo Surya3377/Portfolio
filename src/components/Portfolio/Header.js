@@ -198,62 +198,61 @@ const Header = ({
               </div>
               <div className="absolute -top-5 -left-5 w-100 h-full border-2 border-blue-600 rounded-lg z-0"></div>
             </div>
-
             <div
               className={`transition-all duration-700 transform translate-x-10 opacity-0 ${getAnimationClass(
                 "right"
-              )} max-w-3xl mx-auto p-4 md:p-6`}
+              )} w-full px-0 sm:px-6 md:px-8 py-6 text-left`}
             >
-              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
+              <p className="text-gray-300 mb-3 leading-relaxed text-sm sm:text-base">
                 Hello! I'm Surya Prakash Polu, a React Developer with 2 years of
                 experience specializing in React Web Development. I enjoy
                 transforming complex problems into elegant, efficient, and
                 intuitive solutions.
               </p>
-              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
+              <p className="text-gray-300 mb-3 leading-relaxed text-sm sm:text-base">
                 My journey in web development started with a strong foundation
                 in Electrical and Electronics Engineering from JNTUK University.
                 Since then, I've been passionate about creating responsive,
                 user-friendly applications that deliver exceptional user
                 experiences.
               </p>
-              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
+              <p className="text-gray-300 mb-3 leading-relaxed text-sm sm:text-base">
                 At Siepl Innovations, I've had the opportunity to work on
                 diverse projects, from learning management systems to property
                 platforms, allowing me to refine my skills across the entire
                 development stack.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mt-4">
                 <div>
-                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                  <h5 className="font-medium mb-1 text-sm sm:text-base">
                     Name
                   </h5>
-                  <p className="text-gray-400 text-xs md:text-sm">
+                  <p className="text-gray-400 text-xs sm:text-sm">
                     Surya Prakash Polu
                   </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                  <h5 className="font-medium mb-1 text-sm sm:text-base">
                     Email
                   </h5>
-                  <p className="text-gray-400 text-xs md:text-sm">
+                  <p className="text-gray-400 text-xs sm:text-sm">
                     suryapolu35@gmail.com
                   </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                  <h5 className="font-medium mb-1 text-sm sm:text-base">
                     Phone
                   </h5>
-                  <p className="text-gray-400 text-xs md:text-sm">
+                  <p className="text-gray-400 text-xs sm:text-sm">
                     +91 7816017181
                   </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                  <h5 className="font-medium mb-1 text-sm sm:text-base">
                     Experience
                   </h5>
-                  <p className="text-gray-400 text-xs md:text-sm">2+ Years</p>
+                  <p className="text-gray-400 text-xs sm:text-sm">2+ Years</p>
                 </div>
               </div>
 

@@ -10,7 +10,7 @@ const Portfolio = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
-  const [typedText, setTypedText] = useState("Full Stack Developer");
+  const [typedText, setTypedText] = useState("React Developer");
   const typingPhrases = useMemo(
     () => ["Web Developer", "React Developer", "Front-End Developer"],
     []
