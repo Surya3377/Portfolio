@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu, X, Linkedin, Mail } from "lucide-react";
+import profile from "../assets/images/profile.jpg";
 
 const Header = ({
   isScrolled,
@@ -190,7 +191,7 @@ const Header = ({
             >
               <div className="overflow-hidden rounded-lg bg-gray-800/20 relative z-10">
                 <img
-                  src="https://static.vecteezy.com/system/resources/previews/026/794/654/non_2x/a-happy-3d-business-man-on-transparent-white-background-free-photo.jpg"
+                  src={profile}
                   alt="Surya Prakash Polu"
                   className="w-100 transform hover:scale-105 transition-transform duration-500"
                 />
@@ -199,46 +200,60 @@ const Header = ({
             </div>
 
             <div
-              className={`p-2 transition-all duration-700 transform translate-x-10 opacity-0 ${getAnimationClass(
+              className={`transition-all duration-700 transform translate-x-10 opacity-0 ${getAnimationClass(
                 "right"
-              )}`}
+              )} max-w-3xl mx-auto p-4 md:p-6`}
             >
-              <p className="text-gray-300 mb-2 leading-relaxed">
+              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
                 Hello! I'm Surya Prakash Polu, a React Developer with 2 years of
-                experience specializing in the React Web Development. I enjoy
+                experience specializing in React Web Development. I enjoy
                 transforming complex problems into elegant, efficient, and
                 intuitive solutions.
               </p>
-              <p className="text-gray-300 mb-2 leading-relaxed">
+              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
                 My journey in web development started with a strong foundation
                 in Electrical and Electronics Engineering from JNTUK University.
                 Since then, I've been passionate about creating responsive,
                 user-friendly applications that deliver exceptional user
                 experiences.
               </p>
-              <p className="text-gray-300 mb-2 leading-relaxed">
+              <p className="text-gray-300 mb-2 leading-relaxed text-sm md:text-base">
                 At Siepl Innovations, I've had the opportunity to work on
                 diverse projects, from learning management systems to property
                 platforms, allowing me to refine my skills across the entire
                 development stack.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 mt-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
                 <div>
-                  <h5 className="font-medium mb-1">Name</h5>
-                  <p className="text-gray-400">Surya Prakash Polu</p>
+                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                    Name
+                  </h5>
+                  <p className="text-gray-400 text-xs md:text-sm">
+                    Surya Prakash Polu
+                  </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1">Email</h5>
-                  <p className="text-gray-400">suryapolu35@gmail.com</p>
+                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                    Email
+                  </h5>
+                  <p className="text-gray-400 text-xs md:text-sm">
+                    suryapolu35@gmail.com
+                  </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1">Phone</h5>
-                  <p className="text-gray-400">+91 7816017181</p>
+                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                    Phone
+                  </h5>
+                  <p className="text-gray-400 text-xs md:text-sm">
+                    +91 7816017181
+                  </p>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-1">Experience</h5>
-                  <p className="text-gray-400">2+ Years</p>
+                  <h5 className="font-medium mb-1 text-sm md:text-base">
+                    Experience
+                  </h5>
+                  <p className="text-gray-400 text-xs md:text-sm">2+ Years</p>
                 </div>
               </div>
 
